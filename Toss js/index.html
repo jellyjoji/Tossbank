@@ -20,7 +20,22 @@
                     <img src="https://static.toss.im/icons/png/4x/logo-bank-blue.png" alt="logo">
                 </a>
             </div>
-
+            <!-- this is big size naviMenu -->
+            <ul class="naviMenuLists">
+                <li class="naviMenuList" onmouseenter="toggleMenu1()">
+                    <a href="#">상품/서비스안내</a>
+                </li>
+                <li class="naviMenuList" onmouseenter="toggleMenu2()">
+                    <a href="#">고객센터</a>
+                </li>
+                <li class="naviMenuList" onclick="toggleMenu3()">
+                    <a href="#">은행소개</a>
+                </li>
+                <li class="naviMenuList" onclick="toggleMenu4()">
+                    <a href="#">채용</a>
+                </li>
+            </ul>
+            <!-- this is menuIcon  -->
             <input class="menuIcon" type="button" onclick="btnClick()"></input>
 
         </header>
@@ -81,20 +96,7 @@
     </div>
     <!-- this is naviMenu -->
     <div class="naviMenu">
-        <ul class="naviMenuLists">
-            <li class="naviMenuList">
-                <a href="#">상품/서비스안내</a>
-            </li>
-            <li class="naviMenuList">
-                <a href="#">고객센터</a>
-            </li>
-            <li class="naviMenuList">
-                <a href="#">은행소개</a>
-            </li>
-            <li class="naviMenuList">
-                <a href="#">채용</a>
-            </li>
-        </ul>
+
         <!-- this is First naviMenuBar -->
         <ul class="naviMenuBars one">
             <li class="naviMenuBar">
@@ -135,6 +137,33 @@
                 <p><a href="#">고객정보보호정책</a></p>
             </li>
         </ul>
+        <!-- this is third navuMenuBar -->
+        <ul class="naviMenuBars three">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">투자정보</strong>
+                <p><a href="#">공시정보</a></p>
+                <p><a href="#">재무정보</a></p>
+                <p><a href="#">공고</a></p>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">주주사소개</strong>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">윤리강령</strong>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">오시는 길</strong>
+            </li>
+        </ul>
+        <!-- this is fourth navuMenuBar -->
+        <ul class="naviMenuBars four">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">토스뱅크 채용</strong>
+                <p><a href="#">채용 중 공고</a></p>
+                <p><a href="#">토스뱅크 더 알아보기</a></p>
+            </li>
+        </ul>
+
     </div>
 <!-- this is components -->
     <components>

@@ -29,6 +29,9 @@ header{
     transition: ease-in-out .3s;
     z-index: 1;
 }
+.naviMenuLists{
+    display: none;
+}
 /* this is shadow  */
 #fixedHeader{
 
@@ -54,7 +57,7 @@ header{
     border: none;
     background-color: transparent;
     cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z'/%3E%3C/svg%3E");
 }
 .menu{
     position: relative;
@@ -81,7 +84,7 @@ header{
     height: 32px;
     line-height: 32px;
     padding-left: 24px; 
-    font-size: 0.8rem;   
+    font-size: 0.8rem;
 }
 label{
     display: block;
@@ -90,7 +93,7 @@ label{
 }
 .menuList{
     background-color: #f9f9f9;
-    
+    display: none;
 }
 li{
     font-weight: 300;
@@ -115,6 +118,7 @@ li{
 /* this is naviMenu */
 .naviMenu{
     display: none;
+    /* box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.05); */
 }
 /* this is components  */
 #div1 {
@@ -311,21 +315,18 @@ strong{
         display: block;
         width: 100%;
         height: auto;
-        box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.05);
+        padding-top: 56px;
     }
     .naviMenuLists{
         width: 100%;
         height: 56px;
         display: flex;
-        gap: 2rem;
         justify-content: flex-end;
         align-items: center;
     }
     .naviMenuList{
         cursor: pointer;
-        width: auto;
-        z-index: 2;
-        padding: 0 2rem 0 0;
+        width: 110px;
     }
     .naviMenuList a{
         text-decoration: none;
@@ -336,11 +337,8 @@ strong{
         display: none;
     }
     .naviMenuBars{
-        display: flex;
-        padding-bottom: 2rem;
-    }
-    .naviMenuBars.two{
         display: none;
+        padding-bottom: 2rem;
     }
     .naviMenuBar{
         height: 100%;

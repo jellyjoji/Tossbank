@@ -5,10 +5,10 @@
 // this is toggle menu button 
 function btnClick() {
     var x = document.querySelector(".menu")
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
       x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
 //   this is shadow
@@ -18,6 +18,72 @@ function myFunction() {
         document.getElementById("fixedHeader").className = "fixedHeaderShadow";
     } else {
         document.getElementById("fixedHeader").className = "header"
+    }
+}
+// this is naviMenu toggle
+function toggleMenu1() {
+    var naviMenu = document.querySelector(".naviMenuBars.one");
+    if(naviMenu.style.display == 'flex') {
+        // flex 는 block
+        naviMenu.style.display = 'none';
+    }
+    else {
+        naviMenu.style.display = 'flex';
+    }
+}
+function toggleMenu2() {
+    var naviMenu = document.querySelector(".naviMenuBars.two");
+    if(naviMenu.style.display == 'flex') {
+        naviMenu.style.display = 'none';
+    }
+    else {
+        naviMenu.style.display = 'flex';
+    }
+}
+function toggleMenu3() {
+    var naviMenu = document.querySelector(".naviMenuBars.three");
+    if(naviMenu.style.display == 'flex') {
+        naviMenu.style.display = 'none';
+    }
+    else {
+        naviMenu.style.display = 'flex';
+    }
+}
+function toggleMenu4() {
+    var naviMenu = document.querySelector(".naviMenuBars.four");
+    if(naviMenu.style.display == 'block') {
+        naviMenu.style.display = 'none';
+    }
+    else {
+        naviMenu.style.display = 'block';
+    }
+}
+// this is moreIcon Toggle 
+function onClick1() {
+    var moreIcon = document.querySelector(".menuList.one");
+    if(moreIcon.style.display == 'block') {
+        moreIcon.style.display = 'none';
+    }
+    else {
+        moreIcon.style.display = 'block';
+    }
+}
+function onClick2() {
+    var moreIcon = document.querySelector(".menuList.two");
+    if(moreIcon.style.display == 'block') {
+        moreIcon.style.display = 'none';
+    }
+    else {
+        moreIcon.style.display = 'block';
+    }
+}
+function onClick3() {
+    var moreIcon = document.querySelector(".menuList.threee");
+    if(moreIcon.style.display == 'block') {
+        moreIcon.style.display = 'none';
+    }
+    else {
+        moreIcon.style.display = 'block';
     }
 }
 
