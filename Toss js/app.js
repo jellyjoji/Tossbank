@@ -41,7 +41,7 @@ function toggleMenu2() {
     }
 }
 function toggleMenu3() {
-    var naviMenu = document.querySelector(".naviMenuBars.three");
+    var naviMenu = document.querySelector(".naviMenuBars.threeee");
     if(naviMenu.style.display == 'flex') {
         naviMenu.style.display = 'none';
     }
