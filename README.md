@@ -1,2 +1,2 @@
-# Tossbank
-This is Tossbank website making projects
+this is Vanilla JS 
+Tossbank

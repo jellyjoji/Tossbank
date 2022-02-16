@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- this is navi -->
+    <div class="navi">
+
+        <header class="fixedHeader" id="fixedHeader">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://static.toss.im/icons/png/4x/logo-bank-blue.png" alt="logo">
+                </a>
+            </div>
+            <!-- this is big size naviMenu -->
+            <ul class="naviMenuLists">
+                <li class="naviMenuList" onclick="toggleMenu1()">
+                    <a href="#">상품/서비스안내</a>
+                </li>
+                <li class="naviMenuList" onclick="toggleMenu2()">
+                    <a href="#">고객센터</a>
+                </li>
+                <li class="naviMenuList" onclick="toggleMenu3()">
+                    <a href="#">은행소개</a>
+                </li>
+                <li class="naviMenuList" onclick="toggleMenu4()">
+                    <a href="#">채용</a>
+                </li>
+            </ul>
+            <!-- this is menuIcon  -->
+            <input class="menuIcon" type="button" onclick="btnClick()"></input>
+
+        </header>
+        <!-- this is menu -->
+        <div class="menu">
+            <div class="subMenu" onclick="subClick1()">
+                <span> 상품/서비스 안내 </span>
+                <ul class="menuList one">
+                    <label class="menuListList">
+                        <p>통장</p>
+                        <li>토스뱅크 통장</li>
+                        <li>토스뱅크 모으기</li>
+                        <li>토스뱅크 서브 통장</li>
+                    </label>
+                    <label class="menuListList">
+                        <p>대출</p> 
+                        <li>토스뱅크 신용대출</li>
+                        <li>토스뱅크 마이너스통장</li>
+                        <li>토스뱅크 비상금 대출</li>
+                    </label>
+                    <label class="menuListList">
+                        <p>카드</p> 
+                        <li>토스뱅크카드</li>
+                    </label>
+                </ul>
+                <button class="moreIcon one" type="button" onclick="onClick1()"></button>
+            </div>
+
+            <div class="subMenu" onclick="subClick2()">
+                <span> 고객센터 </span>
+                <ul class="menuList two">
+                    <li>
+                        자주 묻는 질문
+                    </li>
+                    <li>
+                        이용시간 안내
+                    </li>
+                    <li>
+                        금리 안내
+                    </li>
+                </ul>
+                <button class="moreIcon two" type="button" onclick="onClick2()"></button>
+            </div>
+
+            <div class="subMenu" onclick="subClick3()">
+                <span> 채용 </span>
+                <ul class="menuList threee">
+                    <li>
+                        채용 중 공고
+                    </li>
+                    <li>
+                        토스뱅크 더 알아보기
+                    </li>
+                </ul>
+                <button class="moreIcon three" type="button" onclick="onClick3()"></button>
+            </div>
+        </div>
+    </div>
+    <!-- this is naviMenu -->
+    <div class="naviMenu">
+
+        <!-- this is First naviMenuBar -->
+        <ul class="naviMenuBars one">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">통장</strong>
+                <p><a href="#">토스뱅크 통장</a></p>
+                <p><a href="#">토스뱅크 모으기</a></p>
+                <p><a href="#">토스뱅크 서브 통장</a></p>
+                <p><a href="#">토스뱅크 법인 통장</a></p>
+                <p><a href="#">토스뱅크 법인 정기예금</a></p>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">대출</strong>
+                <p><a href="#">토스뱅크 신용대출</a></p>
+                <p><a href="#">토스뱅크 마이너스통장</a></p>
+                <p><a href="#">토스뱅크 비상금 대출</a></p>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">카드</strong>
+                <p><a href="#">토스뱅크 카드</a></p>
+            </li>
+        </ul>
+        <!-- this is Second navuMenuBar -->
+        <ul class="naviMenuBars two">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">이용안내</strong>
+                <p><a href="#">자주 묻는 질문</a></p>
+                <p><a href="#">이용시간 안내</a></p>
+                <p><a href="#">금리 안내</a></p>
+                <p><a href="#">수수료 안내</a></p>
+                <p><a href="#">ATM 이용 안내</a></p>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">소비자 보호</strong>
+                <p><a href="#">소비자보호체계</a></p>
+                <p><a href="#">소비자보호공시</a></p>
+                <p><a href="#">금융감독원 금융정보</a></p>
+                <p><a href="#">금융사기 관련 공시</a></p>
+                <p><a href="#">고객정보보호정책</a></p>
+            </li>
+        </ul>
+        <!-- this is third navuMenuBar -->
+        <ul class="naviMenuBars threeee">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">투자정보</strong>
+                <p><a href="#">공시정보</a></p>
+                <p><a href="#">재무정보</a></p>
+                <p><a href="#">공고</a></p>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">주주사소개</strong>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">윤리강령</strong>
+            </li>
+            <li class="naviMenuBar">
+                <strong class="naviTitle">오시는 길</strong>
+            </li>
+        </ul>
+        <!-- this is fourth navuMenuBar -->
+        <ul class="naviMenuBars four">
+            <li class="naviMenuBar">
+                <strong class="naviTitle">토스뱅크 채용</strong>
+                <p><a href="#">채용 중 공고</a></p>
+                <p><a href="#">토스뱅크 더 알아보기</a></p>
+            </li>
+        </ul>
+
+    </div>
+<!-- this is components -->
+    <components>
+        <button class="ctnButton">
+            <a href="#">친구에게 알려주기</a>
+        </button>
+        <div class="component one">
+            <h2 class="title">새로운 은행을 <br> 만날 순간</h2>
+            <button>시작하기</button>
+            <div id="div1" class="fa"></div>
+            <video src="https://static.toss.im/assets/homepage/tossbank/video-hero-pc.mp4" autoplay loop></video>
+            <!-- controls or autoplay -->
+        </div>
+        <div class="component two">
+            <div class="itemLeft">
+                <h2>
+                    하루만 넣어도 <br> 이자가 쌓이는 통장
+                </h2>
+                <h4>
+                    예적금, 수많은 입출금 통장들. <br>
+                    이제, 귀찮게 찾아다닐 필요 없어요. <br>
+                    채우고, 비우고, 내 맘대로 자유롭게.
+                </h4>
+            </div>
+            <img src="https://static.toss.im/assets/homepage/tossbank/video-01.mp4" alt="#">
+        </div>
+        <div class="component three">
+            <div class="itemLeft">
+                <h2>
+                    기대, <br> 그 이상의 대출
+                </h2>
+                <h4>
+                    단 한 번의 조회로 <br>
+                    어렵고 복잡한 과정 없는 대출 <br>
+                    토스뱅크에서는 가능
+
+                </h4>
+            </div>
+            <img src="https://static.toss.im/assets/homepage/tossbank/video-02.mp4" alt="#">
+        </div>
+        <div class="component four">
+            <div class="itemLeft">
+                <h2>
+                    다채로운 컬러, <br> 아낌없이 주는 혜택, <br> 토스뱅크카드
+                </h2>
+            </div>
+            <img class="cards" src="https://static.toss.im/assets/homepage/tossbank/video-card-mobile.mp4" alt="#">
+        </div>
+        
+    </components>
+<!-- this is footer -->
+    <footer>
+        <div class="span">
+            <strong>고객센터</strong>
+            <a href="tel:16617654">전화 : 1661-7654(24시간 연중무휴) </a>
+            <a href="tel:82269759000">해외전화 : +82-2-6975-9000</a>
+            <a href="mailto:help@tossbank.com">이메일 : help@tossbank.com</a>
+        </div>
+        <div class="span">
+            <strong>토스뱅크(주)</strong>
+            <p>
+                사업자 등록번호 : 462-86-01671 <br> 대표 : 홍민택 <br>
+                06133 서울특별시 강남구 테헤란로 131, 13층 (역삼동, 한국지식재산센터)
+            </p>
+        </div>
+        <div class="span" id="info">
+            <a href="https://www.tossbank.com/customer/information/privacy" target='_blank'>개인정보 처리방침</a>
+            <a href="https://www.tossbank.com/customer/protected-products" target='_blank'>보호금융상품등록부</a>
+            <a href="https://www.tossbank.com/customer/precautions">이용자유의사항</a>
+            <a href="#">공지사항</a>
+            <a href="#">상품공시실</a>
+            <a href="#">경영공시</a>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
