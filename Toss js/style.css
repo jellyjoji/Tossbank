@@ -332,8 +332,11 @@ strong{
         text-decoration: none;
         color: var(--font-black)
     }
+    .naviMenuList:hover a{
+        color: var(--main-color);
+    }
     /* this is naviMenuBar */
-    .menuIcon{
+    .menuIcon, .subMenu{
         display: none;
     }
     .naviMenuBars{
