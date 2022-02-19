@@ -20,42 +20,58 @@ function myFunction() {
         document.getElementById("fixedHeader").className = "header"
     }
 }
+
 // this is naviMenu toggle
+var naviMenu1 = document.querySelector(".naviMenuBars.one");
+var naviMenu2 = document.querySelector(".naviMenuBars.two");
+var naviMenu3 = document.querySelector(".naviMenuBars.threeee");
+var naviMenu4 = document.querySelector(".naviMenuBars.four");
+
 function toggleMenu1() {
-    var naviMenu = document.querySelector(".naviMenuBars.one");
-    if(naviMenu.style.display == 'flex') {
+    if(naviMenu1.style.display == 'flex') {
         // flex 는 block
-        naviMenu.style.display = 'none';
+        naviMenu1.style.display = 'none';
     }
     else {
-        naviMenu.style.display = 'flex';
+        naviMenu1.style.display = 'flex';
+        naviMenu2.style.display = 'none';
+        naviMenu3.style.display = 'none';
+        naviMenu4.style.display = 'none';
     }
 }
 function toggleMenu2() {
-    var naviMenu = document.querySelector(".naviMenuBars.two");
-    if(naviMenu.style.display == 'flex') {
-        naviMenu.style.display = 'none';
+    if(naviMenu2.style.display == 'flex') {
+        naviMenu2.style.display = 'none';
+        
+
     }
     else {
-        naviMenu.style.display = 'flex';
+        naviMenu2.style.display = 'flex';
+        naviMenu1.style.display = 'none';
+        naviMenu3.style.display = 'none';
+        naviMenu4.style.display = 'none';
     }
 }
 function toggleMenu3() {
-    var naviMenu = document.querySelector(".naviMenuBars.threeee");
-    if(naviMenu.style.display == 'flex') {
-        naviMenu.style.display = 'none';
+    if(naviMenu3.style.display == 'flex') {
+        naviMenu3.style.display = 'none';
     }
     else {
-        naviMenu.style.display = 'flex';
+        naviMenu3.style.display = 'flex';
+        naviMenu1.style.display = 'none';
+        naviMenu2.style.display = 'none';
+        naviMenu4.style.display = 'none';
     }
 }
 function toggleMenu4() {
-    var naviMenu = document.querySelector(".naviMenuBars.four");
-    if(naviMenu.style.display == 'block') {
-        naviMenu.style.display = 'none';
+    if(naviMenu4.style.display == 'block') {
+        naviMenu4.style.display = 'none';
     }
     else {
-        naviMenu.style.display = 'block';
+        naviMenu4.style.display = 'block';
+        naviMenu1.style.display = 'none';
+        naviMenu2.style.display = 'none';
+        naviMenu3.style.display = 'none';
     }
 }
 // this is moreIcon Toggle 
