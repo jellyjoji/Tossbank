@@ -1,10 +1,10 @@
 // const menuIcon = document.querySelector(".menuIcon");
 // const menu = document.querySelector(".menu");
-// var windowWidth = window.matchMedia("screen and (max-width: 768px)");
+// let windowWidth = window.matchMedia("screen and (max-width: 768px)");
 
 // this is toggle menu button 
 function btnClick() {
-    var x = document.querySelector(".menu")
+    let x = document.querySelector(".menu")
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -22,10 +22,10 @@ function myFunction() {
 }
 
 // this is naviMenu toggle
-var naviMenu1 = document.querySelector(".naviMenuBars.one");
-var naviMenu2 = document.querySelector(".naviMenuBars.two");
-var naviMenu3 = document.querySelector(".naviMenuBars.threeee");
-var naviMenu4 = document.querySelector(".naviMenuBars.four");
+let naviMenu1 = document.querySelector(".naviMenuBars.one");
+let naviMenu2 = document.querySelector(".naviMenuBars.two");
+let naviMenu3 = document.querySelector(".naviMenuBars.threeee");
+let naviMenu4 = document.querySelector(".naviMenuBars.four");
 
 function toggleMenu1() {
     if(naviMenu1.style.display == 'flex') {
@@ -76,7 +76,7 @@ function toggleMenu4() {
 }
 // this is moreIcon Toggle 
 function onClick1() {
-    var moreIcon = document.querySelector(".menuList.one");
+    let moreIcon = document.querySelector(".menuList.one");
     if(moreIcon.style.display == 'block') {
         moreIcon.style.display = 'none';
     }
@@ -85,7 +85,7 @@ function onClick1() {
     }
 }
 function onClick2() {
-    var moreIcon = document.querySelector(".menuList.two");
+    let moreIcon = document.querySelector(".menuList.two");
     if(moreIcon.style.display == 'block') {
         moreIcon.style.display = 'none';
     }
@@ -94,7 +94,7 @@ function onClick2() {
     }
 }
 function onClick3() {
-    var moreIcon = document.querySelector(".menuList.threee");
+    let moreIcon = document.querySelector(".menuList.threee");
     if(moreIcon.style.display == 'block') {
         moreIcon.style.display = 'none';
     }
@@ -136,7 +136,7 @@ function onClick3() {
 
 // this is animated js
 function smile() {
-    var a;
+    let a;
     a = document.getElementById("div1");
     a.innerHTML = "&#xf118;";
     setTimeout(function () {

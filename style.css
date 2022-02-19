@@ -62,7 +62,6 @@ header{
 .menu{
     position: relative;
     padding-top: 4rem;
-    display: flex;
     flex-direction: column;
     /* this one prevents the menu default open  */
     display: none;
@@ -258,64 +257,17 @@ strong{
     *{
         width: 100%;
     }
+
     /* this is header  */
     .ctnButton{
         display: none;
     }
-    /* .navi{
-        display: flex;
-    } */
-    /* .menuIcon, .moreIcon{
-        display: none;
-    }
-    .menu{
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .subMenu{
-        width: 180px;
-        position: static;
-    }
-    .subMenu span{
-        height: 56px;
-        line-height: 56px;
-        background-color: #fff;
-    }
-    .subMenu span:hover{
-        color:var(--main-color);
-
-    }
-    .menuList{
-        position: absolute;
-        width: 100%;
-        left: 0;
-        display: flex;
-        padding: 24px;
-        background-color: var(--list-color);
-    }
-    .menuListList{
-        width: 180px;
-    }
-    label{
-        border-bottom: none;
-        background-color: inherit;
-    }
-    .subMenu .two{
-        display:none;
-    }
-    .subMenu .three{
-        display:none;
-    }
-    li{
-        width: auto;
-    } */
-
     /* this is naviMenu */
     .naviMenu{
         display: block;
         width: 100%;
         height: auto;
-        /* padding-top: 56px; */
+        padding-top: 56px;
     }
     .naviMenuLists{
         width: 100%;
@@ -336,6 +288,7 @@ strong{
         color: var(--main-color);
     }
     /* this is naviMenuBar */
+    
     .menuIcon, .subMenu{
         display: none;
     }
@@ -343,7 +296,7 @@ strong{
         display: none;
         padding-bottom: 2rem;
     }
-    .naviMenuBar{
+    .bodyMenuBar{
         height: 100%;
     }
     .naviTitle{
